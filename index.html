@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>smallapps</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header"><!-- /header -->
+		<div class="container ">
+			<nav class="header__navigation ">
+				<form class="form-inline header__navigation__search">
+					<img src="img/search.png" alt="">
+					<input  type="search" placeholder="" >
+				</form>
+				<ul class="header__navigation__list ">
+					<li class="header__navigation__list__item"><a href="#">Home</a></li>
+					<li class="header__navigation__list__item"><a href="#">Online shop</a></li>
+				 	<li class="header__navigation__list__item"><a href="#">Diorama/Laden</a></li>
+				 	<li class="header__navigation__list__item"><a href="#">News</a></li>
+				 	<li class="header__navigation__list__item"><a href="#">Galerie</a></li>
+				 	<li class="header__navigation__list__item"><a href="#">Downloads</a></li>
+				</ul>
+				<div class="header__navigation__language">
+					<ul class="header__navigation__language__list ">
+						<li class="header__navigation__language__list__item"><a href="#">Eng</a></li>
+						<li class="header__navigation__language__list__item"><a href="#">Deu</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="line"></div>
+		</div>
+	</header>
+	<div class="logo">
+			<img src="img/plan_small.jpg" class="logo__small-plan" alt="">
+			<img src="img/Logo.jpg"  class="logo__main" alt="logo">
+	</div>
+	<section class="slider">
+		<div class="slider__list">
+			<div class="slider__list__item slider__list__item-1" onclick="showslide(0)">
+				Welcome
+			</div>
+			<div class="slider__list__item slider__list__item-2" onclick="showslide(1)">
+				Herzlich willkommen
+			</div>
+			<div class="slider__list__item slider__list__item-3" onclick="showslide(2)">
+				Bienvenue
+			</div>
+		</div>
+		<div class="slider__output">
+			<div class="slider__output__buttons">
+				<div class="slider__output__buttons__one" onclick="showslide(0)"></div>
+				<div class="slider__output__buttons__one" onclick="showslide(1)"></div>
+				<div class="slider__output__buttons__one" onclick="showslide(2)"></div>
+			</div>
+			<div>
+				<div class="slider__output__main" >
+					<div class="slider__output__main__content">
+						<h2>Airmail</h2>
+						<h3>Flugzeugmodelle</h3>
+						<p>Welcome to Switzerlands leading retailer for ready made air and space models. You can order online or visit our shop at Oberglatt, close to the airport of Zürich.</p>
+					</div>
+					<img src="img/plan_red.png" alt="" ></img>
+				</div>
+				<div class="slider__output__main" >
+					<div class="slider__output__main__content">
+						<h2>Airmail</h2>
+						<h3>Flugzeugmodelle</h3>
+						<p> You can order online or visit our shop at Oberglatt, close to the airport of Zürich.</p>
+					</div>
+					<img src="img/plan_red.png" alt="" ></img>
+				</div>
+				<div class="slider__output__main" >
+					<div class="slider__output__main__content">
+						<h2>Airmail</h2>
+						<h3>Flugzeugmodelle</h3>
+						<p> Zürich.</p>
+					</div>
+					<img src="img/plan_red.png" alt="" ></img>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main class="main">
+		<p class="main__header">Airmail</p>
+		<p class="main__header-bottom">Folge uns</p>
+		<div class="main__container">
+			<div class="main__galerry__corner main__galerry__corner-top">
+				<img src="img/corner1.png" alt="">
+			</div>
+			<div class="main__galerry">	
+				<div class="main__galerry__top">
+					<div class="main__galerry__items-top">
+						<img src="img/1-g.jpg" alt="" class="main__galerry__items__image">
+						<div class="main__galerry__items__description">
+							<p class="main__galerry__items__text__top">Uber uns</p>
+							<p class="main__galerry__items__text__bottom">Mehr</p>
+						</div>
+					</div>
+					<div class="main__galerry__items-top ">
+						<img src="img/2-g.jpg" alt="" class="main__galerry__items__image">
+						<div class="main__galerry__items__description">
+							<p class="main__galerry__items__text__top">Online-Shop</p>
+							<p class="main__galerry__items__text__bottom">Bei uns finden Sie alles, was das Herz von Fans, Sammlern und allen Freunden der grossen und kleinen Flugzeuge höher schlagen lässt</p>
+							<button class="main__galerry__items__description__button"> <img src="img/plan_button.png" alt=""> Online shop</button>
+						</div>
+					</div>
+					<div class="main__galerry__items-top">
+						<img src="img/3-g.jpg" alt="" class="main__galerry__items__image">
+						<div class="main__galerry__items__description">
+							<p class="main__galerry__items__text__top">Actuell</p>
+							<p class="main__galerry__items__text__bottom">Mehr</p>
+						</div>
+					</div>
+				</div>
+				<div class="main__galerry-bottom">
+					<div class="main__galerry__items">
+						<img src="img/4-g.jpg" alt="" class="main__galerry__items__image">
+						<div class="main__galerry__items__description">
+							<p class="main__galerry__items__text__top">Uber uns</p>
+							<p class="main__galerry__items__text__bottom">Mehr</p>
+						</div>
+					</div>
+					<div class="main__galerry__items">
+						<img src="img/5-g.jpg" alt="" class="main__galerry__items__image">
+						<div class="main__galerry__items__description">
+							<p class="main__galerry__items__text__top">Online-Shop</p>
+							<p class="main__galerry__items__text__bottom">Mehr</p>
+						</div>
+					</div>
+					<div class="main__galerry__items">
+						<img src="img/6-g.jpg" alt="" class="main__galerry__items__image">
+						<div class="main__galerry__items__description">
+							<p class="main__galerry__items__text__top">Uber uns</p>
+							<p class="main__galerry__items__text__bottom">Mehr</p>
+						</div>
+					</div>
+					<div class="main__galerry__items">
+						<img src="img/7-g.jpg" alt="" class="main__galerry__items__image">
+						<div class="main__galerry__items__description">
+							<p class="main__galerry__items__text__top">Online-Shop</p>
+							<p class="main__galerry__items__text__bottom">Mehr</p>
+						</div>
+					</div>	
+				</div>
+
+			</div>
+			<div class="main__galerry__corner main__galerry__corner-bottom">
+				<img src="img/corner.png" alt="">
+			</div>		
+		</div>
+		<div class="main__galerry__bottom">
+			<div class="main__galerry__corner main__galerry__corner-top">
+				<img src="img/corner1.png" alt="">
+			</div>
+			<div class="main__galerry__bottom__images">
+				<div class="main__galerry__bottom__images__instagram">
+					<div class="main__galerry__bottom__images__instagram__top">
+						<img src="img/instagram__black.png" alt="">
+						<p> Folge uns</p>
+					</div>
+					<p class="main__galerry__bottom__images__instagram__link">@airmailflugzeugmodelle</p>
+				</div>
+				<div class="main__galerry__bottom__images__image"><img src="img/1-gb.jpg" alt="">
+					<button > <img src="img/instagram.png" alt=""></button>
+				</div>
+				<div class="main__galerry__bottom__images__image"><img src="img/2-gb.jpg" alt="">
+					<button > <img src="img/instagram.png" alt=""></button></div>
+				<div class="main__galerry__bottom__images__image"><img src="img/3-gb.jpg" alt="">
+					<button > <img src="img/instagram.png" alt=""></button></div>
+				<div class="main__galerry__bottom__images__image"><img src="img/4-gb.jpg" alt="">
+					<button > <img src="img/instagram.png" alt=""></button></div>
+
+			</div>
+			<div class="main__galerry__corner main__galerry__bottom__corner-bottom">
+				<img src="img/corner.png" alt="">
+			</div> 		
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="map" id="map">
+				
+			</div>
+			<div class="links">
+				<div class="links__social">
+					<img src="img/foot_instagram.png" alt="">
+					<img src="img/facebook.png" alt="">
+					<img src="img/twitter.png" alt="">
+				</div>
+				<div class="links__container">
+					<div class="links__left">
+						<p class="links__information">Airmail Flugzeugmodelle GmbH<br> Kaiserstuhlstrasse 36 <br>8154 Oberglatt Tel 043 211 93 20</p>
+						<p class="links__link">Datenschutzerklärung</p>
+						<p class="links__copy">© Copyright</p>
+					</div>
+					 <div class="links__right">
+					 	<p class="links__information">Ladenöffnungszeite<br>n:<br> Mi-Fr 10.30-18.30 </p>
+						<p class="links__link">Impressum</p>
+						<p class="links__copy">Created by WIT</p>
+					 </div>
+				</div>							
+			</div>
+		</div>
+	</footer>
+		<script >	
+			function showslide(i){
+				var slide = document.getElementsByClassName("slider__output__main");
+				var buttons= document.getElementsByClassName("slider__output__buttons__one");
+				for (var h = 0; h < slide.length; h++) {
+					slide[h].style.display="none";
+					buttons[h].style.background="#ababab";
+				}
+				slide[i].style.display="block";
+				buttons[i].style.background="#000";
+			}
+		</script>
+		<script>
+			function initMap() {
+				var myLatLng = {lat: 47.472634,  lng: 8.509121};
+				var myMarker = {lat: 47.472289,  lng: 8.509812};
+				var myLogo = {lat: 47.472724,  lng: 8.508487};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					center: myLatLng,
+					zoom: 17
+				});
+				var marker = new google.maps.Marker({
+					map: map,
+					position: myMarker
+				}); 
+				var logo = new google.maps.Marker({
+					map: map,
+					position: myLogo,
+					icon: 'img/logoMap.png'
+				});
+
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_yx9qgXw974d636EHbdLGbSW-TU53FU8&callback=initMap"async defer>
+		</script>
+</html>
