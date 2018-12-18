@@ -8,24 +8,26 @@ ul, li, p, a, h1, h2, h3
 	text-decoration: none
 a
  	color: #000
+img
+	display: block
 a:hover
 	text-decoration: none
 .container
-  width: 1280px
+	width: 1280px
 .header
-  padding-top: 25px
+  	padding-top: 25px
 
 .header__navigation
-  padding-bottom: 15px
-  display: flex
-  -webkit-flex-direction: row
-  -moz-flex-direction: row
-  -ms-flex-direction: row
-  -o-flex-direction: row
-  flex-direction: row
-  justify-content: flex-start
-  vertical-align: flex-start
-  align-items: flex-start
+	padding-bottom: 15px
+	display: flex
+	-webkit-flex-direction: row
+	-moz-flex-direction: row
+	-ms-flex-direction: row
+	-o-flex-direction: row
+	flex-direction: row
+	justify-content: flex-start
+	vertical-align: flex-start
+	align-items: flex-start
 
 .header__navigation__search
 	position: relative
@@ -39,12 +41,12 @@ a:hover
 		left: 0
 
 .header__navigation__list
-  display: flex
-  -webkit-flex-direction: row
-  -moz-flex-direction: row
-  -ms-flex-direction: row
-  -o-flex-direction: row
-  flex-direction: row
+	display: flex
+  	-webkit-flex-direction: row
+  	-moz-flex-direction: row
+	-ms-flex-direction: row
+	-o-flex-direction: row
+	flex-direction: row
 
 .header__navigation__list__item
   	margin-right: 70px
@@ -77,6 +79,7 @@ a:hover
 	font-weight: 900
 	display: flex
 	flex-direction: row
+	width: 100%
 	&__list
 		display: flex
 		flex-direction: column
@@ -97,6 +100,7 @@ a:hover
 	&__output
 		width: 69vw
 		background: #e5e5e5
+		position: relative
 		&__buttons
 			display: flex
 			flex-direction: row
@@ -118,7 +122,6 @@ a:hover
 			margin-left: 80px
 			margin-top: 220px
 			margin-bottom: 80px
-			position: absolute
 			display: none
 			z-index: 20
 			&:first-child
@@ -145,8 +148,13 @@ a:hover
 	position: relative
 	font-family: 'Fira Sans'
 	font-weight: bold
-	width: 1200px
-	margin: 0 auto 
+	max-width: 1500px
+	margin: 0 auto
+	width: 100% 
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
 	&__header
 		color: #818181
 		font-weight: 900 
@@ -154,12 +162,13 @@ a:hover
 		font-size: 392.85px
 		display: block
 		position: relative
-		left: -60px
 		text-transform: uppercase 
 	&__container
-		width: 1280px
+		max-width: 1280px
 		position: relative
 		top: -720px
+		width: 100%
+		margin: 0 auto
 	&__galerry  
 		&__top
 			display: flex
@@ -168,7 +177,7 @@ a:hover
 			flex-direction: row 
 			align-items: flex-end
 		&__items-top
-			width: 426px
+			width: 33.33%
 			height: 570px	
 			background: #000
 			opacity: 0.9			
@@ -180,7 +189,7 @@ a:hover
 			flex-direction: row 
 			align-items: flex-start
 		&__items
-			width: 319.5px
+			width: 25%
 			height: 430px	
 			background: #000
 			position: relative
@@ -204,6 +213,11 @@ a:hover
 		font-size: 16px
 		cursor: pointer
 		font-weight: bold  
+		display: flex
+		flex-direction: row
+		margin: 0 auto
+		img
+			margin-right: 5px
 .main__galerry__items
 	&__text__top
 		margin-bottom: 5px
@@ -225,6 +239,7 @@ a:hover
 .main__galerry__items:hover img
 	opacity: 0.1
 	
+	
 .main__galerry__corner
 	position: relative
 .main__galerry__corner-top	
@@ -241,13 +256,17 @@ a:hover
 .main__galerry__bottom
 	position: absolute
 	bottom: 80px
-	left: -20px
+	left: 60px
 	opacity: 0.9
+	max-width: 1450px
+	width: 100%
 	&__images
 		display: flex
 		-webkit-flex-direction: row 
 		-ms-flex-direction: row 
 		flex-direction: row
+		position: relative
+		width: 100%
 		&__instagram
 			width: 290px
 			height: 290px
@@ -269,9 +288,12 @@ a:hover
 				img
 					margin-right: 20px  
 		&__image
-			width: 290px
+			width: 20%
 			height: 290px
-			
+			position: relative
+			img
+				width: 100%
+				height: 100%
 .main__galerry__bottom__images__image
 	position: relative
 	button
@@ -305,14 +327,15 @@ a:hover
 	font-size: 302.85px
 	display: block
 	position: relative
-	left: -60px
 	top: 800px
-	text-transform: uppercase 
+	text-transform: uppercase
+	left: 20px 
 .footer
 	background: #000
 	color: #888888
 	font-size: 19px
 	margin-top: 200px 
+	padding-bottom: 50px
 	&__container
 		position: relative
 		display: flex
@@ -359,3 +382,334 @@ a:hover
 	height: 2px
 	width: 100%
 	background: #ebebeb 	 
+@media screen and (max-width: 768px)
+	.container
+		width: 708px
+	.header
+  		padding-top: 10px
+	.header__navigation
+		position: relative
+		padding-bottom: 15px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		vertical-align: flex-start
+		align-items: flex-start
+	.header__navigation__search
+		position: relative
+		input
+			border: none
+			width: 170px
+			padding-left: 30px 
+		img
+			position: absolute
+			top: 0
+			left: 0
+	.header__navigation__list__item
+		margin-right: 42px
+		font-weight: bold
+		font-size: 17px
+		&:first-child
+			a
+				color: #a7a7a7
+		&:last-child
+			margin-right: 0    
+	.header__navigation__language
+		position: absolute
+		right: 10px
+		font-weight: bold
+		align-items: flex-end
+		font-size: 18px
+		&__list
+			display: flex
+			&__item
+				margin-left: 20px 
+
+	.logo            
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-top: 50px
+		&__small-plan
+			display: none
+			margin-bottom: 0px
+		&__main
+			margin-bottom: 80px
+			max-width: 582px
+	.slider
+		display: flex
+		flex-direction: column
+		width: 100%
+		&__list
+			display: flex
+			flex-direction: column
+			width: 100vw
+			&__item
+				font-size: 24px
+				padding-top: 45px
+				padding-bottom: 40px
+		&__output
+			width: 100vw
+			position: relative
+			min-height: 490px
+			&__main
+				display: flex
+				flex-direction: row
+				position: relative
+				margin-left: 40px
+				margin-top: 80px
+				margin-bottom: 80px
+				display: none
+				z-index: 20
+				&:first-child
+					display: block
+				img
+					max-width: 420px
+					position: absolute
+					top: 20px
+					left: 300px
+				&__content
+					max-width: 290px
+					h2
+						font-size: 60px
+						font-weight: 900
+					h3
+						font-size: 36px
+						color: #ff9595
+						margin-bottom: 25px
+					p
+						font-family: 'Raleway'
+						max-width: 365px
+						color: #676767
+						font-size: 19px
+	.main
+		max-width: 708px
+		margin: 0 auto
+		width: 100% 
+		&__header
+			margin-top: 100px
+			font-size: 189px
+			text-transform: uppercase 
+		&__container
+			max-width: 708px
+			position: relative
+			top: -310px
+			width: 100%
+		&__galerry  
+			&__top
+				display: flex
+				-webkit-flex-direction: row 
+				-ms-flex-direction: row 
+				flex-direction: row 
+				align-items: flex-end
+				flex-wrap: wrap
+				width: 100%
+			&__items-top
+				width: 50%
+				height: 450px
+				&:first-child
+					width: 100%
+			&-bottom
+				display: flex
+				-webkit-flex-direction: row 
+				-ms-flex-direction: row 
+				flex-direction: row 
+				align-items: flex-start
+				flex-wrap: wrap
+				width: 100%
+			&__items
+				width: 50%
+				height: 445px	
+				&__image
+					display: block
+					margin-left: auto
+					margin-right: auto
+					opacity: 0.5
+					width: 100%
+					height: 100%									
+	.main__galerry__items__description
+		position: absolute
+		bottom: 50px
+		left: 35px
+	.main__galerry__items
+		&__text__top
+			font-size: 28px
+		&__text__bottom
+			color: #c0c0c0
+			font-size: 19px 
+	.main__galerry__items-top:hover
+		background: #dc0202
+		width: 50%
+		height: 450px
+	.main__galerry__items-top:first-child:hover
+		background: #dc0202
+		width: 100%
+		height: 450px
+		
+	.main__galerry__items-top:hover img
+		opacity: 0.1
+	.main__galerry__items:hover
+		background: #dc0202
+		width: 50%
+		height: 445px
+	.main__galerry__items:hover img
+		opacity: 0.1
+		
+	.main__galerry__corner
+		position: absolute
+		display: none
+	.main__galerry__corner-top	
+		top: -10px
+		left: -20px
+		position: absolute
+		display: none
+	.main__galerry__corner-bottom
+		position: absolute
+		bottom: -30px
+		right: -20px
+		display: none
+	.main__galerry__bottom__corner-bottom
+		position: absolute
+		bottom: -50px
+		right: 140px
+		display: none
+	.main__galerry__bottom
+		position: relative
+		opacity: 0.9
+		width: 100%
+		top: -300px
+		left: 0
+		&__images
+			display: flex
+			-webkit-flex-direction: row 
+			-ms-flex-direction: row 
+			flex-direction: row
+			position: relative
+			flex-wrap: wrap
+			width: 100%
+			&__instagram
+				width: 100%
+				display: flex
+				flex-direction: column
+				align-items: center
+				height: auto
+				padding-bottom: 50px  	 
+				&__top
+					margin-top: 100px
+					margin-bottom: 10px
+					display: flex
+					-webkit-flex-direction: row 
+					-ms-flex-direction: row 
+					flex-direction: row
+					align-items: center
+					font-family: 'Fira Sans' 
+					font-weight: bold
+					font-size: 30px
+					color: #161c32  
+					img
+						margin-right: 20px
+						width: 30px
+						height: 30px  
+			&__image
+				width: 25%
+				height: 176px
+				position: relative
+				img
+					width: 100%
+					height: 100%
+					align-items: center
+	.main__galerry__bottom__images__image
+		position: relative
+		button
+			background: transparent
+			border: none 
+			position: absolute
+			top: 50%
+			left: 40%		 
+			display: none
+	.main__galerry__bottom__images__image:hover
+		background: #ff0400
+		position: relative
+		top: 2px
+		right: 2px
+	.main__galerry__bottom__images__image:hover button
+		z-index: 100
+		display: block
+		cursor: pointer
+		opacity: 1
+	.main__galerry__bottom__images__image:hover img
+		opacity: 0.2
+	.main__header-bottom
+		color: #818181
+		font-weight: 300 
+		opacity: 0.1
+		white-space: nowrap
+		font-size: 144.85px
+		display: block
+		position: relative
+		top: 1740px
+		text-transform: uppercase
+		left: 0px 
+	.footer
+		background: #000
+		color: #888888
+		font-size: 19px
+		margin-top: 250px
+		padding-bottom: 50px 
+		&__container
+			position: relative
+			display: flex
+			max-width: 708px
+			flex-wrap: wrap 
+	.links
+		margin-top: 110px
+		display: flex
+		flex-direction: column
+		width: 100%
+		&__left
+			width: 100% 
+			display: flex
+			flex-direction: row
+			align-items: flex-start 
+		&__right
+			display: none
+			position: absolute
+		&__information
+			white-space: normal
+			max-width: 222px
+			width: 50%
+		&__link
+			margin-top: 0px
+			color: #fff
+			text-decoration: underline  
+		&__copy
+			margin-top: 30px    
+	.links__container
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row
+		line-height: 29px
+		white-space: normal     		
+	.links__social
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row
+		margin-bottom: 45px
+		margin-left: auto
+		margin-right: auto  
+		img
+			margin-right: 20px 
+			width: 30px
+			height: 30px
+	.map
+		height: 500px
+		width: 100%
+		position: absolute
+		top: -430px
+	.phone-number
+		display: none
+	.media__link
+		margin-left: 125px
